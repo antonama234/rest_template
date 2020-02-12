@@ -1,28 +1,11 @@
 package ru.anton.gorbachev.rest_template.models;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "users")
 public class User {
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(name = "name")
     private String name;
-
-    @Column(name = "surname")
     private String surname;
-
-    @Column(name = "age")
     private Long age;
-
-    @Column(name = "login")
     private String login;
-
-    @Column(name = "password")
     private String password;
 
     public User(String name, String surname, Long age, String login, String password) {
